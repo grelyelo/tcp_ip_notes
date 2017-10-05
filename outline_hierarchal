@@ -1,0 +1,30 @@
+Main outline for TCP/IP study
+
+Categorical
+
+# Routing
+-- IP Stack
+  -> Addresses, differences between IPv4 and IPv6. 
+  -> How do IP rangees work
+
+# Layers
+  -- Hardware Layer
+    -> On what layers does each protocol operate?
+    -> How do the layers interoperate, how does each layer work with the others?
+    -> How does Hardware layer work with the Layer 
+  -- Data Link Layer
+    -> What is Carrier Sense Multiple Access with Collision Detection work?
+    -> What is it really?
+    -> What are Minimum Transmission Units (MTUs) and how do they work with how long a wire is?
+    
+# Binary Briefing
+  --Binary Numbers
+    -> String of Binary numbers is something like (10010010)
+ 
+  --Bitwise
+    -> How to do bitwise calculation?
+    -> Truth tables
+    
+  --Masking
+    -> How to mask in binary
+    -> convert to hex or decimal
