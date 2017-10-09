@@ -1,0 +1,19 @@
+PDU
+
+	-> Protocol Data Unit
+
+		- Link 
+		- 
+
+
+
+Protocols
+
+-- Transport	
+
+	TCP
+	    - Segment
+	UDP
+	    - Datagram
+
+
