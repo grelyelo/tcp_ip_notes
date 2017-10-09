@@ -26,22 +26,30 @@ ICMP
 
 - Carries NO Payload
 
-- Not used in Application layer, Tecnically Network layer
+- Not used in Application layer, Technically Network layer
+
+- Neighbor Discovery with IPv6
+	- Neighbor Solicitation
+	- Neighbor Advertisiment
 
 
+- Router Discvoery with IPv6
+
+	- Router Solicitations
+	- Router Advertisement
+	  -> Router Gives Advertisement
 
 - Uses Two general types of messages
 
 	-> Error messages
 	-> Informal messages
 
-- Used for connectivity testing
+- Used for connectivity testing AND Router/Neighbor Solicitation and Advertisement. 
 
 - Types for Error Messages
 
-	- 0-127 cover error messages
-	- 128-255 cover informational messages
+	-> 0-127 cover error messages
+	-> 128-255 cover informational messages
  
 
 - 
-
