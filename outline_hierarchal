@@ -16,6 +16,16 @@ Categorical
     -> What is Carrier Sense Multiple Access with Collision Detection work?
     -> What is it really?
     -> What are Minimum Transmission Units (MTUs) and how do they work with how long a wire is?
+
+# Protocols
+
+ -- What are the Protocols and What do they Do?
+
+   -> What protocols correspond to what layers
+
+   -> UDP, TCP, IGMP, ICMP, DHCP
+
+   -> Also, what belongs to Application and what belongs to Transport/Network/Link 
     
 # Binary Briefing
   --Binary Numbers
