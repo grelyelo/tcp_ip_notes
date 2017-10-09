@@ -1,0 +1,18 @@
+ICMP 
+
+-Network Testing
+
+-Uses Datagrams (IP stack)
+
+- Core in IP suite
+
+- ping command
+
+	- widely used to test the connections between computers
+
+
+- Supports a series of of network testing and error messages
+
+- Carries NO Payload
+
+- Not used in Application layer
