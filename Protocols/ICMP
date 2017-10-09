@@ -1,5 +1,11 @@
 ICMP 
 
+- Type: 0 
+- Code: 0
+
+- Datagram
+- Response Time
+
 -Network Testing
 
 -Uses Datagrams (IP stack)
@@ -11,8 +17,31 @@ ICMP
 	- widely used to test the connections between computers
 
 
+- tracert command
+	
+	- uses ping, repeatedly, with increasing ICMP Time To Live, to reach progressively farther through the routers
+
+
 - Supports a series of of network testing and error messages
 
 - Carries NO Payload
 
-- Not used in Application layer
+- Not used in Application layer, Tecnically Network layer
+
+
+
+- Uses Two general types of messages
+
+	-> Error messages
+	-> Informal messages
+
+- Used for connectivity testing
+
+- Types for Error Messages
+
+	- 0-127 cover error messages
+	- 128-255 cover informational messages
+ 
+
+- 
+
