@@ -1,0 +1,7 @@
+Handles logical addresses associated with individual machines on a network
+
+Uses addressing information to determine how to send a PDU  
+
+Embodies notion of multiple simultaneous connections between different IP addresses
+
+Flexible enough to recognize and use multiple routes between a sender and a receiver

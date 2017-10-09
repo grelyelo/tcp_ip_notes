@@ -1,0 +1,9 @@
+Ensures reliable end-to-end transmission of PDUs
+
+Includes end-to-end error-detection and error-recovery
+
+Segmentation 
+
+Involves cutting up a big message into a numbered sequence of chunks, called segments
+
+PDUs used at the Transport layer are called segments, or data segments
