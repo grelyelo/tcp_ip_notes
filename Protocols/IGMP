@@ -1,0 +1,24 @@
+IGMP
+
+
+- Completely new protocol, apart from ICMP
+
+- Part of IP multicast
+
+- One to many applications such as gaming, streaming video
+
+- Separate transport layer protocol
+
+    * Examples are sending an email to a mailing list
+    * Teleconferencing or videoconferencing
+    
+
+- Recievers (designated multicast group) are interested in recieving. 
+
+- Hosts that are interested must join group using IGMP
+
+- Class D used for Multicast Group Addresses
+	- 224.0.0.0 - 239.255.255.255
+
+
+- Class D is mapped directly to a MAC address. Using this method, NICs can recieve packets destined to many MAC addresses -- their own unicast, broadcast, and a range of multicast addresses

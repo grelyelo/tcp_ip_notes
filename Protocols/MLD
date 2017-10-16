@@ -1,0 +1,21 @@
+MLD - Multicast listener discovery 
+
+most routers turn off MLD
+
+Embedded in ICMP
+
+Recievers can be located anywhere on the Internet (not based on location on Network).
+
+Managed via a group
+
+Query (130)
+
+Report (131)
+
+Done (132)
+
+
+Hosts will use Report to Join a group
+No restrictions on location or number 
+
+
