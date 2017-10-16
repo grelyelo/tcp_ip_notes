@@ -1,0 +1,11 @@
+Broadcast 
+
+	- IPv4
+	- Sent to Broadcast address X.X.X.255 (Class C)
+	- Goes all the way up to the Transport layer (blocks on port level)
+
+Multicast
+
+	- IPv4 and IPv6
+	- Goes to Network layer, then stops when it finds a packet that is not bound to one of its MAC addresses
+	- Uses less data processing because it stops at Data Link layer
