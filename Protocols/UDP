@@ -1,0 +1,16 @@
+User Datagram Protocol
+UDP is transport layer protocol
+DATAGRAM as PDU term
+
+-- Does NOT provide acknowledgement
+-- Unreliable - We cannot know that a UDP packet arrived. 
+* Used often for streaming
+
+-- 64 bit (8 byte) header. 
+-- Header is 16 bits for source port number
+
+* SNMP uses UDP for management processes
+* DNS, VOIP, Multicasting
+* Some 
+
+
