@@ -1,0 +1,53 @@
+DNS
+Performs Name Resolution to IP address
+Application Layer
+Port 53
+
+
+Domain Name System
+    - System used for naming computers and network services
+    - Uses a hierarchal structure for organizing those objects into domains
+	-> Root domain (.com, .net, .gov)
+	-> Proposal (.com.mars., .net.mars.) when we expand to mars
+    - Allows local control over domain name database segments
+    - Data from all database segments is available everywhere
+	-> This is because it is "Distributed"
+    - Database information is robust and highly available 
+
+
+Hierarchy
+	Root (.com)
+		Subdomain (google.com)
+			Sub-subdomain (mail.google.com)
+
+Resource Records
+Most commonly used types
+
+- A (address)
+- CNAME (canonical name)
+- Host information (HINFO)
+- Mail Exchange (MX)
+- NS name server
+
+DNS
+	- Primary master name DNS server (authoritative name server)
+		- Where the primary DNS database files for the domains or subdomain reside
+        - Primary master
+		- Distinguished from other name servers for a domain
+	- For any DNS zone
+		- ONE primary master name server
+
+Iterative Query
+	- Go to foobar.baz
+	- Unknown on first DNS server
+	- A computer can try other DNS servers that it knows, in order to check them if they know "whodat?" 
+
+
+START OF AUTHORITY RECORD
+
+- Identifies the current name server as the best source of information for data in its zone
+- Both secondary and primary name server
+	- Can designate themselves as authoritative in their own SOA records. 
+
+Reverse Address Lookups
+	- IP to DN, instead of DN to IP
