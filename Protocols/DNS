@@ -3,6 +3,7 @@ Performs Name Resolution to IP address
 Application Layer
 Port 53
 
+Logical Group by Name 
 
 Domain Name System
     - System used for naming computers and network services

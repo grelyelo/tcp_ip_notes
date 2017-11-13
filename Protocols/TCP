@@ -1,0 +1,69 @@
+TCP
+
+	Reliability
+		ARQ - If a sender gets an ARQ for a sequence number, it will send that sequence packet again. 
+		Checksums - Each packet contains a checksum. If checksum is invalid. reciever sends an ARQ for that packet
+	
+
+	Flow Control
+		Rate based - gives the sender a certain data rate and ensures the data is never allowed to be sent at a faster speed
+		Window based - Window size can vay. There is a message sent that from the reciever to the sender about how large a window to use (window advertisement)
+				(data based, based on the size of data)
+		Window of packets 
+			Collection of packets with sequence numbers that have been injected by the sender but not yet acknowledged
+
+
+	Synchronize/Synchronize-Acknoledgement/Acknowledge
+
+	Syn/ SynAck/ Ack 
+
+
+
+
+TCP Timeout and Retransmisson
+	
+
+	
+	TCP host sends packets into network without a reservation and then reacts to observable events
+	each source determintes how much capacity is available to a given flow in the network
+	ACK's are used to 'pace' the transmission. TCP is thus self-clocking
+
+	Retransmission occurs when data sent has not been acknowledged. 2 types
+	
+		Structure of ACK
+		RTO - time-based. 
+			if data is not acknowledged by the time the timer expires, data is resent
+			RTO is set based on calculated 
+		RTT - Retransmit Threshold	
+			SRTT- Classic method, takes into account past RTT
+			Standard, accomodates a larger variability in RTT
+				Keeps track of variability in RTO as a number
+				Estimates the average RTO
+
+
+		How fast retransmission works
+			Reciever sends duplicate ACK for each packet missing, with sequence number of missing packet
+			Sender retransmits requested packets. 
+
+		Spurious timeouts and retransmission
+			TCP can and willl initiate a retransmit even though no data has been lost
+			Typically occurs when RTT has increased quickly
+		
+		Algorithms used with retransmitting
+
+			Eifel Detection algorithm is used to detect spurious behavior
+			Forward-RTO-Recovery is also used to detect spurious behavior
+			Eifel Response algorithm 
+
+		How SACKs are used to help TCP sender know what data is missing	
+		
+		
+Reordering and duplication
+	- Recordering can take place in the forward path or the reverse path
+	- can be complicated because data packets can go through a different path on network linkx
+	- if holes occur the retransmit must occur to get the correct amount packets
+
+	- Repacketization
+		- TCP may not send out the identical segment that was missed. If that occurs, repacketization needs to occur. 
+		- Repacketization puts data in new packets, instead of using the same packets as before. 
+		

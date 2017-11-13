@@ -1,0 +1,10 @@
+Zone file 
+
+Authoritative Domain Server (SOA)
+At least one Zone File
+Contains all FQDN to IP mappings for a domain
+
+SOA can query other SOAs if it can't find a record
+SOAs will then iteratively query Higher level SOA's
+
+Once it finds a root server ( . ), root server refers to name server for .com, .net, .org subdomains
